@@ -17,7 +17,7 @@ const __dirname = path.resolve();
 
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "https://github.com/mdsahil-a/Flowtalk",
     credentials: true, // allow frontend to send cookies
   })
 );
@@ -41,3 +41,4 @@ app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
   connectDB();
 });
+
