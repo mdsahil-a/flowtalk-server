@@ -17,10 +17,14 @@ const __dirname = path.resolve();
 
 app.use(
   cors({
-    origin: "https://mdsahil-a.github.io",
-    credentials: true, // allow frontend to send cookies
+    origin: [
+      "https://mdsahil-a.github.io",
+      "http://localhost:5173",
+    ],
+    credentials: true,
   })
 );
+
 
 app.use(express.json());
 app.use(cookieParser());
@@ -41,6 +45,7 @@ app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
   connectDB();
 });
+
 
 
 
