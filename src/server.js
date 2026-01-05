@@ -19,6 +19,7 @@ app.use(
   cors({
     origin: [
       "https://mdsahil-a.github.io",
+      "https://jigyasa-y.github.io",
       "http://localhost:5173",
     ],
     credentials: true,
@@ -45,6 +46,7 @@ app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
   connectDB();
 });
+
 
 
 
